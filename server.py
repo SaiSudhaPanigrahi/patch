@@ -172,7 +172,7 @@ def call():
             sessions[from_num] = [""];
 
         response = VoiceResponse();
-        # response.play("https://raw.githubusercontent.com/rasfmar/patch/main/intro.mp3");
+        response.play("https://raw.githubusercontent.com/rasfmar/patch/main/intro.mp3");
         response.record( \
             action=os.getenv("NGROK_URL") + "/record", \
             method="POST", \

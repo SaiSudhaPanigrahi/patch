@@ -191,16 +191,12 @@ const Record = ({ match }) => {
         {otherConcerns && (
           <>
             <h3>Other concerns</h3>
-            {"HIV" in list && (
-              <p>
-                Institutions that administer tests for HIV are marked by a <b style={{ color: "#08ff5a" }}>green dot.</b>
-              </p>
-            )}
-            {"blood pressure" in list && (
-              <p>
-                {list.length > 1 ? "Similarly, i" : "I"}nstitutions that administer <b>free</b> blood pressure tests are marked by a <b style={{ color: "#085aff" }}>blue dot.</b>
-              </p>
-            )}
+            <p>
+              Institutions that administer tests for HIV are marked by a <b style={{ color: "#08ff5a" }}>green dot.</b>
+            </p>
+            <p>
+              {list.length > 1 ? "Similarly, i" : "I"}nstitutions that administer <b>free</b> blood pressure tests are marked by a <b style={{ color: "#085aff" }}>blue dot.</b>
+            </p>
           </>
         )}
         <p>Note: you are able to hover your mouse over any dot (or tap on mobile) to see the information provided by the facility.</p>
