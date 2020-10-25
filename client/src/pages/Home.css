@@ -1,0 +1,17 @@
+.report svg {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1.5em;
+}
+
+.report.report-severity-high svg {
+  color: #dd0000;
+}
+
+.report.report-severity-medium svg {
+  color: #ff8a08;
+}
+
+.report.report-severity-low svg {
+  color: #5add08;
+}

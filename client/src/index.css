@@ -18,6 +18,10 @@ body {
   vertical-align: middle;
 }
 
+.title a {
+  color: #000 !important;
+}
+
 .logo {
   height: 1em;
   margin-top: -6px;
@@ -25,4 +29,6 @@ body {
 
 .infoCol {
   padding: 1em;
+  height: 100vh;
+  overflow-y: scroll;
 }

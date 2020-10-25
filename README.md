@@ -5,3 +5,4 @@
 * [ ] requirements
 * [ ] more coronavirus test data
 * [ ] train a better AI model lol
+* [ ] allow for text convo instead of voice (last priority)

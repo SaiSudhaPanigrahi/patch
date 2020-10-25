@@ -5,7 +5,7 @@ from google.cloud import automl
 from dotenv import load_dotenv;
 load_dotenv();
 
-model_name = "projects/932962647617/locations/us-central1/models/TCN4385233902105526272";
+model_name = "projects/932962647617/locations/us-central1/models/TCN3188884986736410624";
 
 def predict(content):
     options = ClientOptions(api_endpoint="automl.googleapis.com");

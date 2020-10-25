@@ -197,7 +197,7 @@ def record():
         from_num = request.form["From"];
         to_num = request.form["To"];
 
-        if to_num == os.getenv("TWILIO_NUMBER"):
+        if to_num != os.getenv("TWILIO_NUMBER"):
             from_num, to_num = to_num, from_num;
 
         message = "Thanks! We'll be in touch with some helpful information.";
@@ -219,7 +219,7 @@ def audio():
         from_num = request.form["From"];
         to_num = request.form["To"];
 
-        if to_num == os.getenv("TWILIO_NUMBER"):
+        if to_num != os.getenv("TWILIO_NUMBER"):
             from_num, to_num = to_num, from_num;
         
         original_transcript = request.form["TranscriptionText"];
@@ -267,9 +267,9 @@ def audio():
             data["overall"]["depression"] = predictions["depression"];
             data["overall"]["normal"] = predictions["normal"];
             msg = "";
-            if predictions["physical"] > 0.25:
+            if predictions["physical"] > 0.125:
                 msg += "Because of your symptoms, we believe it would be best if you were tested for coronavirus. ";
-            if predictions["depression"] > 0.25:
+            if predictions["depression"] > 0.125:
                 msg += ("Also, o" if msg else "O") + "ur prediction is that you may be suffering from diminished mental health. You should know that we're here for you, and we'll provide you guidance on this as well. ";
             if "flu" in transcript:
                 data["flu"] = True;
