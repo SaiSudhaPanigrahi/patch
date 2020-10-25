@@ -35,27 +35,10 @@ def sms():
     global sessions;
     if client:
         """
-        ImmutableMultiDict([
-            ('ToCountry', 'US'), 
-            ('ToState', 'IN'),
-            ('SmsMessageSid', 'SMd9efdf2b60a3198f9620110a1176959e'),
-            ('NumMedia', '0'),
-            ('ToCity', ''),
             ('FromZip', '46225'),
-            ('SmsSid', 'SMd9efdf2b60a3198f9620110a1176959e'),
             ('FromState', 'IN'),
-            ('SmsStatus', 'received'),
             ('FromCity', 'INDIANAPOLIS'),
-            ('Body', 'U'),
             ('FromCountry', 'US'),
-            ('To', '+13173428661'),
-            ('ToZip', ''),
-            ('NumSegments', '1'),
-            ('MessageSid', 'SMd9efdf2b60a3198f9620110a1176959e'),
-            ('AccountSid', 'AC4ee1e825f2535c7b471e3215a2d722ca'),
-            ('From', '+13174531186'),
-            ('ApiVersion', '2010-04-01')]
-        )
         """
 
         msg = urllib.parse.quote(request.form['Body']);

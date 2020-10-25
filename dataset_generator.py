@@ -2,6 +2,7 @@ from nltk.stem.snowball import SnowballStemmer;
 
 stemmer = SnowballStemmer("english");
 
+
 depression_sentences = [
     "I don't feel like eating",
     "I don't feel like moving",
