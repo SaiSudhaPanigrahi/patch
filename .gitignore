@@ -2,3 +2,5 @@ __pycache__
 .env
 cred.json
 venv
+secure-connect-patch-db.zip
+constants.js

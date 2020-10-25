@@ -1,0 +1,22 @@
+@import '~antd/dist/antd.css';
+
+.mapPin {
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+}
+
+.mapPin.mapPinOrange {
+  fill: #ff5a08;
+}
+
+.mapPin.mapPinBlue {
+  fill: #085aff;
+}
+
+.mapPin.mapPinGreen {
+  fill: #08ff5a;
+}
+
+.mapPin.mapPinRed {
+  fill: #ff0000;
+}

@@ -1,5 +1,7 @@
 # patch
 
-* [ ] fix detecting flu/hiv/coronavirus test/vaccines in transcript
-* [ ] add score to predictions based on sentence lengths
-* [ ] client
+* [x] fix detecting flu/hiv/coronavirus test/vaccines in transcript
+* [x] client
+* [ ] requirements
+* [ ] more coronavirus test data
+* [ ] train a better AI model lol
