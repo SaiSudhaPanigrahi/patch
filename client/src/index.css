@@ -32,3 +32,9 @@ body {
   height: 100vh;
   overflow-y: scroll;
 }
+
+.footer {
+  position: absolute;
+  right: 1em;
+  bottom: 0;
+}

@@ -210,7 +210,7 @@ const Record = ({ match }) => {
 
   return (
     <Row className="container">
-      <Col xs={16}>
+      <Col md={12} lg={16}>
         <Map /*gotData={gotData}*/>
           {where && (
             <Marker
@@ -226,7 +226,7 @@ const Record = ({ match }) => {
           )}
         </Map>
       </Col>
-      <Col xs={8}>
+      <Col md={12} lg={8}>
         <div className="infoCol">
           <Divider plain>
             <h1 className="title">
@@ -255,6 +255,7 @@ const Record = ({ match }) => {
               renderReport()
             )
           )}
+          <p className="footer"><a href="https://marcusfran.co">Marcus Franco</a></p>
         </div>
       </Col>
     </Row>

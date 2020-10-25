@@ -55,10 +55,10 @@ const Home = () => {
 
   return (
     <Row className="container">
-      <Col xs={16}>
+      <Col md={12} lg={16}>
         <Map />
       </Col>
-      <Col xs={8}>
+      <Col md={12} lg={8}>
         <div className="infoCol">
           <Divider plain>
             <h1 className="title">
@@ -91,7 +91,7 @@ const Home = () => {
 
                 const desc = `${(obj.overall[bigger] * 100).toFixed(2)}% ${bigger}, ` +
                              `${(obj.overall[smaller] * 100).toFixed(2)}% ${smaller}, ` +
-                             `${[obj.hiv ? "HIV" : "", obj.flu ? "Flu" : "", obj.blood_pressure ? "HBP" : "", obj.coronavirus ? "COVID-19" : ""].filter(v => v).join(", ")}`;
+                             `${[obj.hiv ? "HIV" : "", obj.flu ? "Flu" : "", obj.blood_pressure ? "HBP" : "", obj.coronavirus ? "COVID" : ""].filter(v => v).join(", ")}`;
 
                 return (
                   <div className={`report report-severity-${category}`}>
@@ -106,6 +106,7 @@ const Home = () => {
               })}
             </List>
           )}
+          <p className="footer"><a href="https://marcusfran.co">Marcus Franco</a></p>
         </div>
       </Col>
     </Row>

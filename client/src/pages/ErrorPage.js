@@ -13,11 +13,13 @@ const ErrorPage = () => (
       <div className="infoCol">
         <Divider plain>
           <h1 className="title">
-            <img src={logo} className="logo" alt="patch logo"/> Patch
+            <Link to="/">
+              <img src={logo} className="logo" alt="patch logo"/> Patch
+            </Link>
           </h1>
         </Divider>
         <p>404 not found!</p>
-        <Link to="/">go back</Link>
+        <p className="footer"><a href="https://marcusfran.co">Marcus Franco</a></p>
       </div>
     </Col>
   </Row>
