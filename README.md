@@ -1,6 +1,6 @@
 # patch
 ## What is this?
-This is a virtual healthcare assistant. Using a Twilio-integrated Flask API, it allows for users to call a number, describe their symptoms, and generate a personalized report provided preliminary medical guidance, leveraging a deep learning model I trained to classify sentences. It also shows users where to go for flu vaccines, coronavirus tests, HIV tests, and blood pressure checkups. Please see the ![Devpost](https://devpost.com/software/patch-u3a2bf)
+This is a virtual healthcare assistant I created in 24 hours for UB Hacking 2020. Using a Twilio-integrated Flask API, it allows for users to call a number, describe their symptoms, and generate a personalized report provided preliminary medical guidance, leveraging a deep learning model I trained to classify sentences. It also shows users where to go for flu vaccines, coronavirus tests, HIV tests, and blood pressure checkups. Please see the ![Devpost](https://devpost.com/software/patch-u3a2bf)
 
 ## How do I use this?
 ### General
